@@ -10,6 +10,7 @@
 		F41C2236242B6AF900831568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41C2235242B6AF900831568 /* AppDelegate.swift */; };
 		F41C223F242B6AFA00831568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41C223E242B6AFA00831568 /* Assets.xcassets */; };
 		F41C2242242B6AFA00831568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41C2240242B6AFA00831568 /* LaunchScreen.storyboard */; };
+		F46FE497242D5EB7001FF3A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F46FE496242D5EB7001FF3A4 /* GoogleService-Info.plist */; };
 		F486169E242B6C0400505F89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486169D242B6C0400505F89 /* LoginViewController.swift */; };
 		F48616A0242B6C1500505F89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486169F242B6C1500505F89 /* HomeViewController.swift */; };
 		F48616A2242B6C1D00505F89 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48616A1242B6C1D00505F89 /* BalanceViewController.swift */; };
@@ -22,6 +23,7 @@
 		F41C223E242B6AFA00831568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F41C2241242B6AFA00831568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F41C2243242B6AFA00831568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F46FE496242D5EB7001FF3A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F486169D242B6C0400505F89 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F486169F242B6C1500505F89 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F48616A1242B6C1D00505F89 /* BalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				F41C223E242B6AFA00831568 /* Assets.xcassets */,
 				F41C2240242B6AFA00831568 /* LaunchScreen.storyboard */,
 				F41C2243242B6AFA00831568 /* Info.plist */,
+				F46FE496242D5EB7001FF3A4 /* GoogleService-Info.plist */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				F41C2242242B6AFA00831568 /* LaunchScreen.storyboard in Resources */,
 				F41C223F242B6AFA00831568 /* Assets.xcassets in Resources */,
+				F46FE497242D5EB7001FF3A4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ynascimento.Firebase;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ynascimento.FirebaseCloudMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -337,7 +341,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.ynascimento.Firebase;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ynascimento.FirebaseCloudMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
