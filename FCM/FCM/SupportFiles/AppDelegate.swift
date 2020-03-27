@@ -61,17 +61,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-//    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-//
-//        let token = deviceToken.reduce("") { $0 + String(format: "%02x", $1) }
-//        print("...............Apple Token:", token)
-//
-//        Messaging.messaging().apnsToken = deviceToken
-//    }
-
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-                let token = deviceToken.reduce("") { $0 + String(format: "%02x", $1) }
-                print("...............Apple Token:", token)
+
+        let token = deviceToken.reduce("") { $0 + String(format: "%02x", $1) }
+        print("...............Apple Token:", token)
+
+        Messaging.messaging().apnsToken = deviceToken
     }
 
     func permissionAndRegistrationPushNotifications() {
