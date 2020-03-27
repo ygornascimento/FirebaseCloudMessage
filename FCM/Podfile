@@ -9,3 +9,8 @@ target 'FCM' do
   pod 'Firebase/Messaging'
 
 end
+
+target 'NotificationServicesExtension' do
+  use_frameworks!
+  pod 'Firebase/Messaging'
+end
