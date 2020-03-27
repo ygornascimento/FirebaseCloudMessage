@@ -1,2 +1,2 @@
-# firebase2
-Testing some Firebase settings
+# Firebase Cloud Message
+Testing Firebase Cloud Message
