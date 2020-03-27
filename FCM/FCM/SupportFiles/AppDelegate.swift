@@ -61,8 +61,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+//    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+//
+//        let token = deviceToken.reduce("") { $0 + String(format: "%02x", $1) }
+//        print("...............Apple Token:", token)
+//
+//        Messaging.messaging().apnsToken = deviceToken
+//    }
+
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        Messaging.messaging().apnsToken = deviceToken
+                let token = deviceToken.reduce("") { $0 + String(format: "%02x", $1) }
+                print("...............Apple Token:", token)
     }
 
     func permissionAndRegistrationPushNotifications() {
@@ -94,13 +103,13 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         let notificationInfo: NSDictionary = userInfo as NSDictionary
 
         //Mark: - Push Notification Deeplinks
-        if let url = URL(string: notificationInfo.value(forKey: "link_url") as? String ?? "fire://home") {
+        if let url = URL(string: notificationInfo.value(forKey: "link_url") as? String ?? "fcm://home") {
             switch url {
-                case URL(string: "fire://home"):
+                case URL(string: "fcm://home"):
                     window?.rootViewController = homeViewController
-                case URL(string: "fire://balance"):
+                case URL(string: "fcm://balance"):
                     window?.rootViewController?.present(balanceViewController, animated: true, completion: nil)
-                case URL(string: "fire://payment"):
+                case URL(string: "fcm://payment"):
                     window?.rootViewController?.present(paymentViewController, animated: true, completion: nil)
                 default:
                     window?.rootViewController = homeViewController
