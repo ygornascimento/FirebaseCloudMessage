@@ -10,6 +10,7 @@ import UIKit
 import FirebaseCore
 import FirebaseMessaging
 import UserNotifications
+import SafariServices
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -98,8 +99,8 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         let notificationInfo: NSDictionary = userInfo as NSDictionary
 
         //Mark: - Push Notification Deeplinks
-        if let url = URL(string: notificationInfo.value(forKey: "link_url") as? String ?? "fcm://home") {
-            switch url {
+        if let appUrl = URL(string: notificationInfo.value(forKey: "app_url") as? String ?? "fcm://home") {
+            switch appUrl {
                 case URL(string: "fcm://home"):
                     window?.rootViewController = homeViewController
                 case URL(string: "fcm://balance"):
@@ -108,6 +109,11 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
                     window?.rootViewController?.present(paymentViewController, animated: true, completion: nil)
                 default:
                     window?.rootViewController = homeViewController
+            }
+
+        if let url = URL(string: notificationInfo.value(forKey: "link_url") as? String ?? "https://google.com") {
+                let safari = SFSafariViewController(url: url)
+                window?.rootViewController?.present(safari, animated: true, completion: nil)
             }
         }
 
