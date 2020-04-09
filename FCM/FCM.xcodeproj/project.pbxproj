@@ -19,6 +19,7 @@
 		F40B169F242DFBEB009ADB3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40B169B242DFBEB009ADB3B /* LoginViewController.swift */; };
 		F40B16A0242DFBEB009ADB3B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40B169C242DFBEB009ADB3B /* HomeViewController.swift */; };
 		F4957A71242DFFCF004FA6A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4957A70242DFFCF004FA6A7 /* GoogleService-Info.plist */; };
+		F49F474F243F9A0400CCFD42 /* FirebaseInAppActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F474E243F9A0400CCFD42 /* FirebaseInAppActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F40B169C242DFBEB009ADB3B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4957A6F242DFEB8004FA6A7 /* FCM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCM.entitlements; sourceTree = "<group>"; };
 		F4957A70242DFFCF004FA6A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F49F474E243F9A0400CCFD42 /* FirebaseInAppActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseInAppActions.swift; path = ../../../../FirebaseInAppActions.swift; sourceTree = "<group>"; };
 		F7B1E40791359C8EF2E3C564 /* Pods-NotificationServicesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServicesExtension.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServicesExtension/Pods-NotificationServicesExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 		F40B1698242DFA9B009ADB3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F49F474E243F9A0400CCFD42 /* FirebaseInAppActions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				F40B169D242DFBEB009ADB3B /* PaymentViewController.swift in Sources */,
 				F40B1682242DF9D3009ADB3B /* AppDelegate.swift in Sources */,
 				F40B169F242DFBEB009ADB3B /* LoginViewController.swift in Sources */,
+				F49F474F243F9A0400CCFD42 /* FirebaseInAppActions.swift in Sources */,
 				F40B169E242DFBEB009ADB3B /* BalanceViewController.swift in Sources */,
 				F40B16A0242DFBEB009ADB3B /* HomeViewController.swift in Sources */,
 			);
